@@ -1,0 +1,22 @@
+:root {
+
+    /* Backgrounds */
+    --Main-Very-dark-violet: hsl(268, 75%, 9%);    /* (main background) */
+    --Very-dark-violet: hsl(268, 71%, 12%);   /* (toggle background, keypad background, screen background) */
+
+    /* Keys */
+
+    --Dark-violet: hsl(281, 89%, 26% );  /* (key background) */
+    --Vivid-magenta : hsl(285, 91%, 52%);   /* (key shadow) */
+
+    --Pure-cyan: hsl(176, 100%, 44%);   /* (key background) */
+    --Soft-cyan: hsl(177, 92%, 70%);   /* (key shadow) */
+
+    --Key-Very-dark-violet: hsl(268, 47%, 21%);    /* (key background) */
+    --Dark-magenta: hsl(290, 70%, 36%);    /* (key shadow) */
+
+    /* Text */
+    --Light-yellow: hsl(52, 100%, 62%);
+    --Very-dark-blue: hsl(198, 20%, 13%);
+    --White: hsl(0, 0%, 100%);
+}
