@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.ico">
+
+  <link rel="stylesheet" href="./styles/style.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+
+  <main id="main">
+
+    <header id="app-header">
+      <h1>calc</h1>
+      <div class="theme-button-container">
+        <input type="checkbox" id="theme-button">
+        <label for="theme-button"></label>
+      </div>
+    </header>
+
+    <div id="calculator">
+
+      <div class="output-container">
+        <label for="output-box"></label>
+        <input type="text" id="output-box" disabled>
+      </div>
+
+      <div class="input-button-container">
+        <button class="input-button" type="button">7</button>
+        <button class="input-button" type="button">8</button>
+        <button class="input-button" type="button">9</button>
+        <button class="input-button" type="button">DEL</button>
+        <button class="input-button" type="button">4</button>
+        <button class="input-button" type="button">5</button>
+        <button class="input-button" type="button">6</button>
+        <button class="input-button" type="button">+</button>
+        <button class="input-button" type="button">1</button>
+        <button class="input-button" type="button">2</button>
+        <button class="input-button" type="button">3</button>
+        <button class="input-button" type="button">-</button>
+        <button class="input-button" type="button">.</button>
+        <button class="input-button" type="button">0</button>
+        <button class="input-button" type="button">/</button>
+        <button class="input-button" type="button">x</button>
+      </div>
+
+      <div class="calculate-button-container">
+        <button id="reset-button" type="button">RESET</button>
+        <button id="calculate-button" type="button">=</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
