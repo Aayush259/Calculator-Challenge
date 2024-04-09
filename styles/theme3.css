@@ -1,22 +1,36 @@
 :root {
 
     /* Backgrounds */
-    --Main-Very-dark-violet: hsl(268, 75%, 9%);    /* (main background) */
-    --Very-dark-violet: hsl(268, 71%, 12%);   /* (toggle background, keypad background, screen background) */
+    --Main-Background: hsl(268, 75%, 9%);    /* (main background) */
+    --Toggle-Background: hsl(268, 71%, 12%);   /* (toggle background, keypad background) */
+    --Screen-Background: hsl(268, 71%, 12%);    /* (screen background) */
 
     /* Keys */
 
-    --Dark-violet: hsl(281, 89%, 26% );  /* (key background) */
-    --Vivid-magenta : hsl(285, 91%, 52%);   /* (key shadow) */
+    --Reset-Delete-Key-Background: hsl(281, 89%, 26% );  /* (key background) */
+    --Reset-Delete-Key-Shadow: hsl(285, 91%, 52%);   /* (key shadow) */
 
-    --Pure-cyan: hsl(176, 100%, 44%);   /* (key background) */
-    --Soft-cyan: hsl(177, 92%, 70%);   /* (key shadow) */
+    --Toggle-Key-Background: hsl(176, 100%, 44%);   /* (key background) */
+    --Toggle-key-Shadow: hsl(177, 92%, 70%);   /* (key shadow) */
 
-    --Key-Very-dark-violet: hsl(268, 47%, 21%);    /* (key background) */
-    --Dark-magenta: hsl(290, 70%, 36%);    /* (key shadow) */
+    --Input-Key-Background: hsl(268, 47%, 21%);    /* (key background) */
+    --Input-Key-Shadow: hsl(290, 70%, 36%);    /* (key shadow) */
 
     /* Text */
-    --Light-yellow: hsl(52, 100%, 62%);
-    --Very-dark-blue: hsl(198, 20%, 13%);
+    --Text: hsl(52, 100%, 62%);
     --White: hsl(0, 0%, 100%);
+    --Input-app-header: hsl(52, 100%, 62%);
+}
+
+#calculate-button:hover {
+    background-color: hsl(176, 85%, 70%) !important;
+    color: #000 !important;
+}
+
+.input-button-container button:hover {
+    background-color: hsl(268, 47%, 40%) !important;
+}
+
+#delete-btn:hover, #reset-button:hover {
+    background-color: hsl(281, 89%, 41%) !important;
 }
