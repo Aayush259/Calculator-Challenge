@@ -1,35 +1,34 @@
-:root {
+:root{
     /* Backgrounds */
-
-    --Main-Background: hsl(222, 26%, 31%);     /* (main background) */
-    --Toggle-Background: hsl(223, 31%, 20%);       /* (toggle background, keypad background) */
-    --Screen-Background: hsl(224, 36%, 15%);       /* (screen background) */
+    --Main-Background:hsl(222, 26%, 31%);
+    --Toggle-Background:hsl(223, 31%, 20%);
+    --Screen-Background:hsl(224, 36%, 15%);
 
     /* Keys */
-    --Reset-Delete-Key-Background: hsl(225, 21%, 49%);       /* (key background) */
-    --Reset-Delete-Key-Shadow: hsl(224, 28%, 35%);       /* (key shadow) */
+    --Reset-Delete-Key-Background:hsl(225, 21%, 49%);
+    --Reset-Delete-Key-Shadow:hsl(224, 28%, 35%);
 
-    --Toggle-Key-Background: hsl(6, 63%, 50%);       /* (key background, toggle) */
-    --Toggle-key-Shadow: hsl(6, 70%, 34%);      /* (key shadow) */
+    --Toggle-Key-Background:hsl(6, 63%, 50%);
+    --Toggle-key-Shadow:hsl(6, 70%, 34%);
 
-    --Input-Key-Background: hsl(30, 25%, 89%);     /* (key background) */
-    --Input-Key-Shadow: hsl(28, 16%, 65%);       /* (key shadow) */
+    --Input-Key-Background:hsl(30, 25%, 89%);
+    --Input-Key-Shadow:hsl(28, 16%, 65%);
 
     /* Text */
-    --White: hsl(0, 0%, 100%);
-    --Text: hsl(221, 14%, 31%);
-    --Input-app-header: hsl(0, 0%, 100%);
-    --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --White:hsl(0, 0%, 100%);
+    --Text:hsl(221, 14%, 31%);
+    --Input-app-header:hsl(0, 0%, 100%);
+    --Very-dark-grayish-blue:hsl(221, 14%, 31%);
 }
 
-#calculate-button:active {
-    background-color: hsl(6, 79%, 64%) !important;
+#calculate-button:active{
+    background-color:hsl(6, 79%, 64%) !important;
 }
 
-.input-button-container button:active {
-    background-color: var(--White) !important;
+.input-button-container button:active{
+    background-color:var(--White) !important;
 }
 
-#delete-btn:active, #reset-button:active {
-    background-color: hsl(226, 40%, 73%) !important;
+#delete-btn:active, #reset-button:active{
+    background-color:hsl(226, 40%, 73%) !important;
 }

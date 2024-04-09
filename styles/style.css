@@ -1,154 +1,152 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'League Spartan', sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'League Spartan', sans-serif;
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.flex{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
 }
 
-body {
-    background-color: var(--Main-Background);
-    min-height: 100vh;
-    flex-direction: column;
+body{
+    background-color:var(--Main-Background);
+    min-height:100vh;
+    flex-direction:column;
 }
 
-#main {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+#main{
+    width:fit-content;
 }
 
-#calculator {
-    width: 98vw;
-    max-width: 300px;
-    margin-top: 1.5rem;
+#calculator{
+    width:98vw;
+    max-width:300px;
+    margin-top:1.5rem;
 }
 
-h1 {
-    font-size: 1.6rem;
+h1{
+    font-size:1.6rem;
 }
 
-#app-header {
-    color: var(--Input-app-header);
-    justify-content: space-between;
+#app-header{
+    color:var(--Input-app-header);
+    justify-content:space-between;
     align-items:last baseline;
 }
 
-#app-header > div:nth-child(2) {
-    align-items: flex-end;
-    gap: 20px;
-    font-size: 0.7rem;
-    font-weight: 700;
+#app-header > div:nth-child(2){
+    align-items:flex-end;
+    gap:20px;
+    font-size:0.7rem;
+    font-weight:700;
 }
 
-.theme-button-container {
-    flex-direction: column;
-    gap: 5px;
+.theme-button-container{
+    flex-direction:column;
+    gap:5px;
 }
 
-.theme-levels {
-    gap: 14px;
+.theme-levels{
+    gap:14px;
 }
 
-#theme-button {
-    width: 62px;
-    height: 20px;
-    border: none;
-    border-radius: 50px;
-    background-color: var(--Toggle-Background);
-    cursor: pointer;
+#theme-button{
+    width:62px;
+    height:20px;
+    border:none;
+    border-radius:50px;
+    background-color:var(--Toggle-Background);
+    cursor:pointer;
 }
 
-#theme-button::before {
-    display: block;
-    content: '';
-    height: 14px;
-    width: 14px;
-    background-color: var(--Toggle-Key-Background);
-    border-radius: 50%;
-    margin: 0 3px;
-    transition: all 0.15s ease-in-out;
+#theme-button::before{
+    display:block;
+    content:'';
+    height:14px;
+    width:14px;
+    background-color:var(--Toggle-Key-Background);
+    border-radius:50%;
+    margin:0 3px;
+    transition:all 0.15s ease-in-out;
 }
 
-.theme2-active::before {
-    transform: translateX(19px);
+.theme2-active::before{
+    transform:translateX(19px);
 }
 
-.theme3-active::before {
-    transform: translateX(42px);
+.theme3-active::before{
+    transform:translateX(42px);
 }
 
-.output-container, #output-box {
-    background-color: var(--Screen-Background);
-    color: var(--Input-app-header);
+.output-container, #output-box{
+    background-color:var(--Screen-Background);
+    color:var(--Input-app-header);
 }
 
-.output-container {
-    border-radius: 0.5rem;
-    overflow: hidden;
-    padding: 0.5rem;
+.output-container{
+    border-radius:0.5rem;
+    overflow:hidden;
+    padding:0.5rem;
 }
 
-#output-box {
-    border: none;
-    width: 100%;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: right;
-    padding: 1rem;
+#output-box{
+    border:none;
+    width:100%;
+    font-size:2rem;
+    font-weight:700;
+    text-align:right;
+    padding:1rem;
 }
 
-.input-button-container {
-    margin-top: 0.9rem;
-    padding: 1rem;
-    background-color: var(--Toggle-Background);
-    border-radius: 0.5rem 0.5rem 0 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.9rem;
+.input-button-container{
+    margin-top:0.9rem;
+    padding:1rem;
+    background-color:var(--Toggle-Background);
+    border-radius:0.5rem 0.5rem 0 0;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:0.9rem;
 }
 
-.input-button-container button, .calculate-button-container button {
-    height: 40px;
-    line-height: 40px;
-    background-color: var(--Input-Key-Background);
-    border: none;
-    border-bottom: 3px solid var(--Input-Key-Shadow);
-    border-radius: 0.5rem;
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: var(--Text);
-    user-select: none;
-    cursor: pointer;
+.input-button-container button, .calculate-button-container button{
+    height:40px;
+    line-height:40px;
+    background-color:var(--Input-Key-Background);
+    border:none;
+    border-bottom:3px solid var(--Input-Key-Shadow);
+    border-radius:0.5rem;
+    font-weight:700;
+    font-size:1.3rem;
+    color:var(--Text);
+    user-select:none;
+    cursor:pointer;
 }
 
-.input-button-container button:hover {
-    background-color: var(--White);
+.input-button-container button:hover{
+    background-color:var(--White);
 }
 
-#delete-btn, #reset-button {
-    background-color: var(--Reset-Delete-Key-Background);
-    border-color: var(--Reset-Delete-Key-Shadow);
-    color: var(--White);
+#delete-btn, #reset-button{
+    background-color:var(--Reset-Delete-Key-Background);
+    border-color:var(--Reset-Delete-Key-Shadow);
+    color:var(--White);
 }
 
-.calculate-button-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.9rem;
-    background-color: var(--Toggle-Background);
-    padding: 0 1rem 1rem 1rem;
-    border-radius: 0 0 0.5rem 0.5rem;
+.calculate-button-container{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:0.9rem;
+    background-color:var(--Toggle-Background);
+    padding:0 1rem 1rem 1rem;
+    border-radius:0 0 0.5rem 0.5rem;
 }
 
-#calculate-button {
-    background-color: var(--Toggle-Key-Background);
-    border-color: var(--Toggle-key-Shadow);
-    color: var(--White);
+#calculate-button{
+    background-color:var(--Toggle-Key-Background);
+    border-color:var(--Toggle-key-Shadow);
+    color:var(--White);
 }
