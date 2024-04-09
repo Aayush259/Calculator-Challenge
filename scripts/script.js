@@ -106,3 +106,17 @@ InputButtons.forEach(button => {
         }
     })
 })
+
+// Adding event listener on document for a keydown to add keyboard functionality to calculator app.
+document.addEventListener('keydown', (e) => {
+
+    // Array of numbers.
+    const NumberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    // If the pressed key is a number, then Take it as an input. If the pressed key is Enter key then calculate the result.
+    if (NumberArray.includes(Number(e.key))) {
+        TakeInput(String(e.key));
+    } else if (e.key === `Enter`) {
+        Calculate();
+    }
+})
