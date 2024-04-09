@@ -22,14 +22,14 @@
     --Very-dark-grayish-blue: hsl(221, 14%, 31%);
 }
 
-#calculate-button:hover {
+#calculate-button:active {
     background-color: hsl(6, 79%, 64%) !important;
 }
 
-.input-button-container button:hover {
+.input-button-container button:active {
     background-color: var(--White) !important;
 }
 
-#delete-btn:hover, #reset-button:hover {
+#delete-btn:active, #reset-button:active {
     background-color: hsl(226, 40%, 73%) !important;
 }

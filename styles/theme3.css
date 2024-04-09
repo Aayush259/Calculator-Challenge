@@ -22,15 +22,15 @@
     --Input-app-header: hsl(52, 100%, 62%);
 }
 
-#calculate-button:hover {
+#calculate-button:active {
     background-color: hsl(176, 85%, 70%) !important;
     color: #000 !important;
 }
 
-.input-button-container button:hover {
+.input-button-container button:active {
     background-color: hsl(268, 47%, 40%) !important;
 }
 
-#delete-btn:hover, #reset-button:hover {
+#delete-btn:active, #reset-button:active {
     background-color: hsl(281, 89%, 41%) !important;
 }
