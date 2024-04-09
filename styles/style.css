@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
 }
 
 .flex {
@@ -12,7 +13,6 @@
 }
 
 body {
-    font-family: 'League Spartan', sans-serif;
     background-color: var(--Main-Very-dark-desaturated-blue);
     min-height: 100vh;
     flex-direction: column;
@@ -26,7 +26,7 @@ body {
 
 #calculator {
     width: 98vw;
-    max-width: 500px;
+    max-width: 300px;
     margin-top: 1.5rem;
 }
 
@@ -95,3 +95,47 @@ h1 {
     padding: 1rem;
 }
 
+.input-button-container {
+    margin-top: 0.9rem;
+    padding: 1rem;
+    background-color: var(--Toggle-Very-dark-desaturated-blue);
+    border-radius: 0.5rem 0.5rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.input-button-container button, .calculate-button-container button {
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--Light-grayish-orange);
+    border: none;
+    border-bottom: 3px solid var(--Grayish-orange);
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--Toggle-Very-dark-desaturated-blue);
+    user-select: none;
+    cursor: pointer;
+}
+
+#delete-btn, #reset-button {
+    background-color: var(--Desaturated-dark-blue);
+    border-color: var(--Shadow-Desaturated-dark-blue);
+    color: var(--White);
+}
+
+.calculate-button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    background-color: var(--Toggle-Very-dark-desaturated-blue);
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+#calculate-button {
+    background-color: var(--Red);
+    border-color: var(--Dark-red);
+    color: var(--White);
+}

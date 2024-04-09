@@ -7,7 +7,7 @@
 
     /* Keys */
     --Desaturated-dark-blue: hsl(225, 21%, 49%);       /* (key background) */
-    --Desaturated-dark-blue: hsl(224, 28%, 35%);       /* (key shadow) */
+    --Shadow-Desaturated-dark-blue: hsl(224, 28%, 35%);       /* (key shadow) */
 
     --Red: hsl(6, 63%, 50%);       /* (key background, toggle) */
     --Dark-red: hsl(6, 70%, 34%);      /* (key shadow) */
