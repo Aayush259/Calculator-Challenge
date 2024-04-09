@@ -52,8 +52,8 @@ const TakeInput = (text) => {
     // Getting output box.
     const OutputBox = document.getElementById('output-box');
 
-    // If the output box value if Error or Infinity then replace it with current text, else if the last character of the input is similar to the current input character, then update the last character of input with the current input character. Else, append the current character in the output box.
-    if (OutputBox.value === `Error` || OutputBox.value === `Infinity`) {
+    // If the output box value if Error or Infinity or undefined then replace it with current text, else if the last character of the input is similar to the current input character, then update the last character of input with the current input character. Else, append the current character in the output box.
+    if (OutputBox.value === `Error` || OutputBox.value === `Infinity` || OutputBox.value === `undefined`) {
         OutputBox.value = text;
     } else if (ArrayOfOperators.includes(OutputBox.value.slice(-1)) && ArrayOfOperators.includes(text)) {
         OutputBox.value = `${OutputBox.value.slice(0, -1)}${text}`;
@@ -113,10 +113,27 @@ document.addEventListener('keydown', (e) => {
     // Array of numbers.
     const NumberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-    // If the pressed key is a number, then Take it as an input. If the pressed key is Enter key then calculate the result.
+    /*
+        If the pressed key is a number, then Take it as an input.
+        If the pressed key is Enter key then calculate the result.
+        If the pressed key is Delete key then reset the calculations.
+        If the pressed key is Backspace key then removes the last inputted character.
+    */
     if (NumberArray.includes(Number(e.key))) {
         TakeInput(String(e.key));
+    } else if (e.key === `p` || e.key === `P`) {
+        TakeInput(`+`);
+    } else if (e.key === `m` || e.key === `M`) {
+        TakeInput(`x`);
+    } else if (e.key === `s` || e.key === `S`) {
+        TakeInput(`-`);
+    } else if (e.key === `d` || e.key === `D`) {
+        TakeInput(`/`);
     } else if (e.key === `Enter`) {
         Calculate();
+    } else if (e.key === `Delete`) {
+        Reset();
+    } else if (e.key === `Backspace`) {
+        Delete();
     }
 })
