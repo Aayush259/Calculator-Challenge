@@ -1,9 +1,9 @@
 :root {
     /* Backgrounds */
 
-    --Very-dark-desaturated-blue: hsl(222, 26%, 31%);     /* (main background) */
-    --Very-dark-desaturated-blue: hsl(223, 31%, 20%);       /* (toggle background, keypad background) */
-    --Very-dark-desaturated-blue: hsl(224, 36%, 15%);       /* (screen background) */
+    --Main-Very-dark-desaturated-blue: hsl(222, 26%, 31%);     /* (main background) */
+    --Toggle-Very-dark-desaturated-blue: hsl(223, 31%, 20%);       /* (toggle background, keypad background) */
+    --Screen-Very-dark-desaturated-blue: hsl(224, 36%, 15%);       /* (screen background) */
 
     /* Keys */
     --Desaturated-dark-blue: hsl(225, 21%, 49%);       /* (key background) */

@@ -15,15 +15,22 @@
   
   <title>Frontend Mentor | Calculator app</title>
 </head>
-<body>
+<body class="flex">
 
   <main id="main">
 
-    <header id="app-header">
+    <header id="app-header" class="flex">
       <h1>calc</h1>
-      <div class="theme-button-container">
-        <input type="checkbox" id="theme-button">
-        <label for="theme-button"></label>
+      <div class="flex">
+        <span>THEME</span>
+        <div class="theme-button-container flex">
+          <div class="theme-levels flex">
+            <p id="theme-level-1">1</p>
+            <p id="theme-level-2">2</p>
+            <p id="theme-level-3">3</p>
+          </div>
+          <button id="theme-button"></button>
+        </div>
       </div>
     </header>
 
