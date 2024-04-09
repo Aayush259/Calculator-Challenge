@@ -8,9 +8,9 @@ There are three themes in-built in this app. You can switch to the desired theme
 Here are the screenshots of all the three different themes:
 
 <p>
-    <img src="./images/theme-1-ss.jpg" width="100">
-    <img src="./images/theme-2-ss.jpg" width="100">
-    <img src="./images/theme-3-ss.jpg" width="100">
+    <img src="./images/theme-1-ss.jpg" width="200">
+    <img src="./images/theme-2-ss.jpg" width="200">
+    <img src="./images/theme-3-ss.jpg" width="200">
 </p>
 
 ## Built with
