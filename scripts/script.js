@@ -29,7 +29,7 @@ const Calculate = () => {
     }
 
     // If the first and last characters of the expression are operators, then remove them from expression.
-    if (ArrayOfOperators.includes(expression[0])) {
+    if (ArrayOfOperators.includes(expression[0]) && expression[0] !== `-`) {
         expression = expression.slice(1);
     }
     if (ArrayOfOperators.includes(expression[expression.length - 1])) {
